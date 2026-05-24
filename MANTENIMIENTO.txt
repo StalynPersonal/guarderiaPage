@@ -1,0 +1,57 @@
+╔══════════════════════════════════════════════════════════════════════════════
+║  GUÍA DE MANTENIMIENTO — CRECERÉ SITIO WEB
+╠══════════════════════════════════════════════════════════════════════════════
+║
+║  Para actualizar datos del sitio busca el comentario ← CAMBIAR junto a cada
+║  valor.  Los más frecuentes están resumidos aquí:
+║
+║  CONTACTO
+║  ─────────────────────────────────────────────────────────────────────────
+║  Teléfono      sección #contacto  href="tel:+1XXXXXXXXXX"  y texto visible
+║  WhatsApp      sección #contacto  href="https://wa.me/1XXXXXXXXXX"
+║  Dirección     sección #contacto  texto visible en el bloque Dirección
+║
+║  PRECIOS (sección #horarios)
+║  ─────────────────────────────────────────────────────────────────────────
+║  Tanda Base      precio + horario dentro de cada tarjeta
+║  Tanda Extendida precio + horario dentro de cada tarjeta
+║  Tanda Completa  precio + horario dentro de cada tarjeta
+║
+║  STATS (franja debajo del hero)
+║  ─────────────────────────────────────────────────────────────────────────
+║  Busca la sección con id="stats" — son los 4 números grandes.
+║
+║  CARRUSEL DEL HERO
+║  ─────────────────────────────────────────────────────────────────────────
+║  Las imágenes del carrusel usan picsum.photos como muestra.
+║  Para cambiar a fotos reales:
+║    1. Coloca tus fotos en  img/actividades/
+║    2. En cada slide cambia el src por  ../img/actividades/foto.jpg
+║    3. Actualiza el texto de caption (párrafo dentro del slide).
+║
+║  GALERÍA
+║  ─────────────────────────────────────────────────────────────────────────
+║  Misma mecánica que el carrusel: cambia el src de cada <img> al path real
+║  y actualiza el atributo alt con una descripción.
+║
+║  FAVICON
+║  ─────────────────────────────────────────────────────────────────────────
+║  Archivo  img/favicon.svg  — edítalo con Inkscape o Adobe Illustrator.
+║  Para ICO/PNG adicionales agrega más <link rel="icon"> en el <head>.
+║
+║  COLORES Y TIPOGRAFÍA
+║  ─────────────────────────────────────────────────────────────────────────
+║  Editar  src/input.css  → bloque @theme {}
+║  Luego ejecutar:  npm run build
+║
+║  PORTAL DE PADRES
+║  ─────────────────────────────────────────────────────────────────────────
+║  Busca href="/login" en el HTML y reemplaza por la URL real del portal.
+║  Aparece en: navbar, hero (botón "Contáctenos" va a #contacto),
+║              sección CTA y footer.
+║
+║  NOMBRE DE LA GUARDERÍA
+║  ─────────────────────────────────────────────────────────────────────────
+║  Busca "Creceré" en el HTML y reemplaza donde corresponda.
+║
+╚══════════════════════════════════════════════════════════════════════════════

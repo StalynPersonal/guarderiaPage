@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Creceré — Guardería infantil dedicada al cuidado y desarrollo de niños de 14 a 24 meses en un ambiente seguro, amoroso y estimulante." />
+    <title>Creceré — Guardería Infantil</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../img/favicon.svg" />
+
+    <!-- Fuente Nunito (Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- CSS generado por Tailwind CLI  (npm run build) -->
+    <link rel="stylesheet" href="../dist/styles.css" />
+</head>
+
+
+<body class="font-sans text-gray-700 bg-white antialiased">
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         NAVBAR
+    ═══════════════════════════════════════════════════════════════ -->
+    <header id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white transition-shadow duration-300">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="flex items-center justify-between h-16">
+
+                <!-- Logo — CAMBIAR: nombre de la guardería -->
+                <a href="#inicio" class="flex items-center gap-2">
+                    <img src="../img/favicon.svg" alt="Logo Creceré" class="w-9 h-9" />
+                    <!-- CAMBIAR: nombre en el navbar -->
+                    <span class="text-xl font-extrabold text-primary-700">Creceré</span>
+                </a>
+
+                <!-- Menú escritorio -->
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="#nosotros"    class="text-sm font-semibold text-gray-600 hover:text-primary-600 transition-colors">Nosotros</a>
+                    <a href="#actividades" class="text-sm font-semibold text-gray-600 hover:text-primary-600 transition-colors">Actividades</a>
+                    <a href="#horarios"    class="text-sm font-semibold text-gray-600 hover:text-primary-600 transition-colors">Horarios</a>
+                    <a href="#galeria"     class="text-sm font-semibold text-gray-600 hover:text-primary-600 transition-colors">Galería</a>
+                    <a href="#contacto"    class="text-sm font-semibold text-gray-600 hover:text-primary-600 transition-colors">Contacto</a>
+                    <!-- CAMBIAR: URL del portal Blazor -->
+                    <a href="/login"
+                       class="ml-2 px-4 py-2 rounded-full bg-primary-600 text-white text-sm font-bold hover:bg-primary-700 transition-colors shadow-sm">
+                        Portal de padres
+                    </a>
+                </nav>
+
+                <!-- Botón menú móvil -->
+                <button id="btn-menu" type="button" aria-label="Abrir menú" aria-expanded="false"
+                        class="md:hidden p-2 rounded-lg text-gray-500 hover:text-primary-600 hover:bg-gray-100 transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menú móvil desplegable -->
+        <div id="menu-movil" class="hidden md:hidden border-t border-gray-100 bg-white px-4 pb-4">
+            <nav class="flex flex-col gap-1 pt-3">
+                <a href="#nosotros"    class="py-2 px-3 rounded-lg text-sm font-semibold text-gray-600 hover:bg-gray-50 hover:text-primary-600">Nosotros</a>
+                <a href="#actividades" class="py-2 px-3 rounded-lg text-sm font-semibold text-gray-600 hover:bg-gray-50 hover:text-primary-600">Actividades</a>
+                <a href="#horarios"    class="py-2 px-3 rounded-lg text-sm font-semibold text-gray-600 hover:bg-gray-50 hover:text-primary-600">Horarios</a>
+                <a href="#galeria"     class="py-2 px-3 rounded-lg text-sm font-semibold text-gray-600 hover:bg-gray-50 hover:text-primary-600">Galería</a>
+                <a href="#contacto"    class="py-2 px-3 rounded-lg text-sm font-semibold text-gray-600 hover:bg-gray-50 hover:text-primary-600">Contacto</a>
+                <a href="/login" class="mt-2 py-2 px-3 rounded-full bg-primary-600 text-white text-sm font-bold text-center hover:bg-primary-700">
+                    Portal de padres
+                </a>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         HERO  (texto izquierda + carrusel derecha)
+    ═══════════════════════════════════════════════════════════════ -->
+    <section id="inicio" class="relative min-h-screen flex items-center pt-16 overflow-hidden bg-gradient-to-br from-primary-700 via-primary-600 to-blue-400">
+
+        <!-- Círculos decorativos de fondo -->
+        <div class="absolute top-[-80px] right-[-80px] w-96 h-96 rounded-full bg-white opacity-5 pointer-events-none"></div>
+        <div class="absolute bottom-[-60px] left-[-60px] w-72 h-72 rounded-full bg-white opacity-5 pointer-events-none"></div>
+        <div class="absolute top-1/2 left-1/4 w-40 h-40 rounded-full bg-accent-400 opacity-10 pointer-events-none"></div>
+
+        <div class="relative max-w-6xl mx-auto px-4 sm:px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+
+            <!-- ── Texto izquierda ───────────────────── -->
+            <div class="text-white">
+                <span class="inline-block px-4 py-1 rounded-full bg-white/20 text-sm font-semibold mb-6">
+                    🌱 Niños de 14 a 24 meses
+                </span>
+                <!-- CAMBIAR: eslogan principal -->
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+                    Donde cada día<br/>
+                    <span class="text-accent-400">es una aventura</span>
+                </h1>
+                <!-- CAMBIAR: descripción breve -->
+                <p class="text-lg text-blue-100 mb-8 max-w-md leading-relaxed">
+                    En Creceré brindamos un ambiente seguro, amoroso y estimulante
+                    donde su hijo da sus primeros grandes pasos.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contacto"
+                       class="px-6 py-3 rounded-full bg-white text-primary-700 font-bold hover:bg-blue-50 transition-colors shadow-lg">
+                        Contáctenos
+                    </a>
+                    <a href="#nosotros"
+                       class="px-6 py-3 rounded-full border-2 border-white text-white font-bold hover:bg-white/10 transition-colors">
+                        Conocer más
+                    </a>
+                </div>
+            </div>
+
+            <!-- ── Carrusel derecha ──────────────────────────────────────────
+                 CAMBIAR IMÁGENES: en cada slide reemplaza el src por tu foto real.
+                 Ejemplo: src="../img/actividades/tu-foto.jpg"
+                 También actualiza el texto del caption (el <p> al final del slide).
+            ─────────────────────────────────────────────────────────────── -->
+            <div class="relative" id="hero-carousel">
+
+                <!-- Contenedor de slides -->
+                <div class="relative h-80 md:h-96 lg:h-[430px] rounded-3xl overflow-hidden shadow-2xl">
+
+                    <!-- Slide 1 — CAMBIAR -->
+                    <div class="slide absolute inset-0 opacity-0 transition-opacity duration-700 ease-in-out">
+                        <img src="https://picsum.photos/seed/crecere-hero-1/700/500"
+                             alt="Niños jugando en la guardería"
+                             class="w-full h-full object-cover" loading="eager" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                        <p class="absolute bottom-4 left-5 text-white font-bold text-base drop-shadow">🎨 Arte y creatividad</p><!-- ← CAMBIAR caption -->
+                    </div>
+
+                    <!-- Slide 2 — CAMBIAR -->
+                    <div class="slide absolute inset-0 opacity-0 transition-opacity duration-700 ease-in-out">
+                        <img src="https://picsum.photos/seed/crecere-hero-2/700/500"
+                             alt="Hora del cuento"
+                             class="w-full h-full object-cover" loading="lazy" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                        <p class="absolute bottom-4 left-5 text-white font-bold text-base drop-shadow">📚 Cuentos y lectura</p><!-- ← CAMBIAR caption -->
+                    </div>
+
+                    <!-- Slide 3 — CAMBIAR -->
+                    <div class="slide absolute inset-0 opacity-0 transition-opacity duration-700 ease-in-out">
+                        <img src="https://picsum.photos/seed/crecere-hero-3/700/500"
+                             alt="Juego libre"
+                             class="w-full h-full object-cover" loading="lazy" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                        <p class="absolute bottom-4 left-5 text-white font-bold text-base drop-shadow">🧸 Juego libre</p><!-- ← CAMBIAR caption -->
+                    </div>
+
+                    <!-- Slide 4 — CAMBIAR -->
+                    <div class="slide absolute inset-0 opacity-0 transition-opacity duration-700 ease-in-out">
+                        <img src="https://picsum.photos/seed/crecere-hero-4/700/500"
+                             alt="Música y movimiento"
+                             class="w-full h-full object-cover" loading="lazy" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                        <p class="absolute bottom-4 left-5 text-white font-bold text-base drop-shadow">🎵 Música y movimiento</p><!-- ← CAMBIAR caption -->
+                    </div>
+
+                    <!-- Flecha anterior -->
+                    <button id="carousel-prev"
+                            type="button"
+                            aria-label="Imagen anterior"
+                            class="absolute left-3 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white/80 hover:bg-white flex items-center justify-center shadow-md transition-colors">
+                        <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                        </svg>
+                    </button>
+
+                    <!-- Flecha siguiente -->
+                    <button id="carousel-next"
+                            type="button"
+                            aria-label="Imagen siguiente"
+                            class="absolute right-3 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white/80 hover:bg-white flex items-center justify-center shadow-md transition-colors">
+                        <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Dots indicadores -->
+                <div class="flex items-center justify-center gap-2 mt-4">
+                    <button type="button" class="dot h-2 rounded-full bg-white transition-all duration-300" aria-label="Ir a imagen 1"></button>
+                    <button type="button" class="dot h-2 rounded-full bg-white/40 transition-all duration-300" aria-label="Ir a imagen 2"></button>
+                    <button type="button" class="dot h-2 rounded-full bg-white/40 transition-all duration-300" aria-label="Ir a imagen 3"></button>
+                    <button type="button" class="dot h-2 rounded-full bg-white/40 transition-all duration-300" aria-label="Ir a imagen 4"></button>
+                </div>
+            </div>
+            <!-- /carrusel -->
+
+        </div>
+
+        <!-- Ola inferior -->
+        <div class="absolute bottom-0 left-0 right-0">
+            <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 80L60 70C120 60 240 40 360 36.7C480 33 600 47 720 53.3C840 60 960 60 1080 53.3C1200 47 1320 33 1380 26.7L1440 20V80H1380C1320 80 1200 80 1080 80C960 80 840 80 720 80C600 80 480 80 360 80C240 80 120 80 60 80H0Z" fill="white"/>
+            </svg>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         STATS — franja de números debajo del hero
+         CAMBIAR: los 4 números y sus etiquetas
+    ═══════════════════════════════════════════════════════════════ -->
+    <section id="stats" class="py-10 bg-white border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+
+                <div class="animar-entrada">
+                    <div class="text-3xl font-extrabold text-primary-600">10+</div><!-- ← CAMBIAR -->
+                    <div class="text-sm text-gray-500 mt-1">Años de experiencia</div>
+                </div>
+                <div class="animar-entrada">
+                    <div class="text-3xl font-extrabold text-primary-600">30+</div><!-- ← CAMBIAR -->
+                    <div class="text-sm text-gray-500 mt-1">Niños felices</div>
+                </div>
+                <div class="animar-entrada">
+                    <div class="text-3xl font-extrabold text-primary-600">3</div><!-- ← CAMBIAR -->
+                    <div class="text-sm text-gray-500 mt-1">Educadoras certificadas</div>
+                </div>
+                <div class="animar-entrada">
+                    <div class="text-3xl font-extrabold text-primary-600">3</div><!-- ← CAMBIAR -->
+                    <div class="text-sm text-gray-500 mt-1">Horarios disponibles</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         NOSOTROS
+    ═══════════════════════════════════════════════════════════════ -->
+    <section id="nosotros" class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+
+            <div class="text-center mb-16 animar-entrada">
+                <span class="text-primary-600 font-bold text-sm uppercase tracking-widest">Quiénes somos</span>
+                <!-- CAMBIAR: título y párrafo -->
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-800 mt-2">Un lugar que se siente como hogar</h2>
+                <p class="mt-4 text-gray-500 max-w-2xl mx-auto leading-relaxed">
+                    Somos una guardería especializada en el cuidado y estimulación temprana de niños
+                    entre 14 y 24 meses. Nuestro equipo está formado por educadoras certificadas
+                    apasionadas por el desarrollo infantil.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <!-- Tarjeta 1 — CAMBIAR: título y descripción -->
+                <div class="animar-entrada text-center p-8 rounded-2xl bg-blue-50 hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 rounded-full bg-primary-600 flex items-center justify-center mx-auto mb-5">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Ambiente amoroso</h3>
+                    <p class="text-gray-500 leading-relaxed">
+                        Cada niño recibe atención personalizada en un entorno cálido donde se
+                        siente seguro y querido todos los días.
+                    </p>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="animar-entrada text-center p-8 rounded-2xl bg-yellow-50 hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 rounded-full bg-accent-500 flex items-center justify-center mx-auto mb-5">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Educadoras certificadas</h3>
+                    <p class="text-gray-500 leading-relaxed">
+                        Nuestro equipo cuenta con formación especializada en desarrollo infantil
+                        temprano y primeros auxilios pediátricos.
+                    </p>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="animar-entrada text-center p-8 rounded-2xl bg-green-50 hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 rounded-full bg-green-500 flex items-center justify-center mx-auto mb-5">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Estimulación integral</h3>
+                    <p class="text-gray-500 leading-relaxed">
+                        Programa de actividades diseñado para estimular el desarrollo motor,
+                        cognitivo, social y emocional en cada etapa.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         ACTIVIDADES
+         CAMBIAR: para usar foto real descomenta la línea <img> y
+         ajusta el src a la ruta de tu imagen.
+    ═══════════════════════════════════════════════════════════════ -->
+    <section id="actividades" class="py-24 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+
+            <div class="text-center mb-16 animar-entrada">
+                <span class="text-primary-600 font-bold text-sm uppercase tracking-widest">Lo que hacemos</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-800 mt-2">Un día lleno de aprendizaje</h2>
+                <p class="mt-4 text-gray-500 max-w-2xl mx-auto">
+                    Cada actividad está pensada para potenciar las habilidades de su hijo
+                    de forma divertida y natural.
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- ── Actividad: Música ──────────────────────────── -->
+                <div class="animar-entrada bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <div class="relative h-48 bg-gradient-to-br from-purple-400 to-pink-400 flex items-center justify-center overflow-hidden">
+                        <!-- CAMBIAR: imagen de muestra → foto real  -->
+                        <img src="https://picsum.photos/seed/musica-crecere/600/300"
+                             alt="Música y movimiento"
+                             class="absolute inset-0 w-full h-full object-cover opacity-60" loading="lazy" />
+                        <span class="relative text-5xl drop-shadow-lg">🎵</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-gray-800 text-lg mb-2">Música y movimiento</h3><!-- ← CAMBIAR -->
+                        <p class="text-gray-500 text-sm leading-relaxed">
+                            Canciones, ritmos y baile para desarrollar la coordinación,
+                            el lenguaje y la expresión emocional.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ── Actividad: Arte ────────────────────────────── -->
+                <div class="animar-entrada bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <div class="relative h-48 bg-gradient-to-br from-yellow-300 to-orange-400 flex items-center justify-center overflow-hidden">
+                        <img src="https://picsum.photos/seed/arte-crecere/600/300"
+                             alt="Arte y manualidades"
+                             class="absolute inset-0 w-full h-full object-cover opacity-60" loading="lazy" />
+                        <span class="relative text-5xl drop-shadow-lg">🎨</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-gray-800 text-lg mb-2">Arte y manualidades</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">
+                            Pintura con dedos, plastilina y collage para estimular
+                            la creatividad y la motricidad fina.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ── Actividad: Lectura ─────────────────────────── -->
+                <div class="animar-entrada bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <div class="relative h-48 bg-gradient-to-br from-blue-300 to-cyan-400 flex items-center justify-center overflow-hidden">
+                        <img src="https://picsum.photos/seed/lectura-crecere/600/300"
+                             alt="Cuentos y lectura"
+                             class="absolute inset-0 w-full h-full object-cover opacity-60" loading="lazy" />
+                        <span class="relative text-5xl drop-shadow-lg">📚</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-gray-800 text-lg mb-2">Cuentos y lectura</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">
+                            Lectura de cuentos ilustrados para estimular el lenguaje,
+                            la imaginación y el amor por los libros.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ── Actividad: Juego libre ─────────────────────── -->
+                <div class="animar-entrada bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <div class="relative h-48 bg-gradient-to-br from-green-300 to-teal-400 flex items-center justify-center overflow-hidden">
+                        <img src="https://picsum.photos/seed/juego-crecere/600/300"
+                             alt="Juego libre"
+                             class="absolute inset-0 w-full h-full object-cover opacity-60" loading="lazy" />
+                        <span class="relative text-5xl drop-shadow-lg">🧸</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-gray-800 text-lg mb-2">Juego libre</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">
+                            Espacio seguro para explorar, interactuar con otros niños
+                            y desarrollar la autonomía.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ── Actividad: Alimentación ────────────────────── -->
+                <div class="animar-entrada bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <div class="relative h-48 bg-gradient-to-br from-red-300 to-pink-400 flex items-center justify-center overflow-hidden">
+                        <img src="https://picsum.photos/seed/alimentos-crecere/600/300"
+                             alt="Alimentación saludable"
+                             class="absolute inset-0 w-full h-full object-cover opacity-60" loading="lazy" />
+                        <span class="relative text-5xl drop-shadow-lg">🍎</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-gray-800 text-lg mb-2">Alimentación saludable</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">
+                            Meriendas nutritivas y momentos de alimentación guiada
+                            para crear hábitos saludables desde pequeños.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ── Actividad: Siesta ──────────────────────────── -->
+                <div class="animar-entrada bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <div class="relative h-48 bg-gradient-to-br from-indigo-300 to-purple-400 flex items-center justify-center overflow-hidden">
+                        <img src="https://picsum.photos/seed/siesta-crecere/600/300"
+                             alt="Descanso y siesta"
+                             class="absolute inset-0 w-full h-full object-cover opacity-60" loading="lazy" />
+                        <span class="relative text-5xl drop-shadow-lg">😴</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-gray-800 text-lg mb-2">Descanso y siesta</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">
+                            Rutinas de descanso supervisadas para que cada niño
+                            recargue energías y siga su ritmo natural.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         HORARIOS Y TARIFAS
+         CAMBIAR: precio y horario en cada tarjeta  ← CAMBIAR
+    ═══════════════════════════════════════════════════════════════ -->
+    <section id="horarios" class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+
+            <div class="text-center mb-16 animar-entrada">
+                <span class="text-primary-600 font-bold text-sm uppercase tracking-widest">Horarios y tarifas</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-800 mt-2">Elige el horario ideal</h2>
+                <p class="mt-4 text-gray-500 max-w-xl mx-auto">
+                    Ofrecemos tres opciones de horario para adaptarnos a las necesidades de su familia.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <!-- Tanda Base -->
+                <div class="animar-entrada rounded-2xl border-2 border-gray-100 p-8 text-center hover:border-primary-200 hover:shadow-lg transition-all">
+                    <div class="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center mx-auto mb-5">
+                        <svg class="w-7 h-7 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707M17.657 17.657l-.707-.707M6.343 6.343l-.707-.707"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-1">Tanda Base</h3>
+                    <p class="text-gray-400 text-sm mb-6">7:00 am — 1:00 pm</p><!-- ← CAMBIAR horario -->
+                    <div class="text-4xl font-extrabold text-primary-600 mb-1">$200</div><!-- ← CAMBIAR precio -->
+                    <div class="text-sm text-gray-400 mb-6">por mes</div>
+                    <a href="#contacto" class="block w-full py-2 rounded-full border-2 border-primary-600 text-primary-600 font-bold hover:bg-primary-600 hover:text-white transition-colors text-sm">
+                        Consultar
+                    </a>
+                </div>
+
+                <!-- Tanda Extendida (destacada) -->
+                <div class="animar-entrada rounded-2xl bg-primary-600 p-8 text-center shadow-xl scale-105">
+                    <div class="inline-block px-3 py-1 rounded-full bg-accent-400 text-primary-900 text-xs font-bold mb-5">
+                        MÁS POPULAR
+                    </div>
+                    <div class="w-14 h-14 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-5">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-1">Tanda Extendida</h3>
+                    <p class="text-blue-200 text-sm mb-6">7:00 am — 4:00 pm</p><!-- ← CAMBIAR horario -->
+                    <div class="text-4xl font-extrabold text-white mb-1">$280</div><!-- ← CAMBIAR precio -->
+                    <div class="text-sm text-blue-200 mb-6">por mes</div>
+                    <a href="#contacto" class="block w-full py-2 rounded-full bg-white text-primary-700 font-bold hover:bg-blue-50 transition-colors text-sm">
+                        Consultar
+                    </a>
+                </div>
+
+                <!-- Tanda Completa -->
+                <div class="animar-entrada rounded-2xl border-2 border-gray-100 p-8 text-center hover:border-primary-200 hover:shadow-lg transition-all">
+                    <div class="w-14 h-14 rounded-full bg-blue-50 flex items-center justify-center mx-auto mb-5">
+                        <svg class="w-7 h-7 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-1">Tanda Completa</h3>
+                    <p class="text-gray-400 text-sm mb-6">7:00 am — 6:00 pm</p><!-- ← CAMBIAR horario -->
+                    <div class="text-4xl font-extrabold text-primary-600 mb-1">$350</div><!-- ← CAMBIAR precio -->
+                    <div class="text-sm text-gray-400 mb-6">por mes</div>
+                    <a href="#contacto" class="block w-full py-2 rounded-full border-2 border-primary-600 text-primary-600 font-bold hover:bg-primary-600 hover:text-white transition-colors text-sm">
+                        Consultar
+                    </a>
+                </div>
+            </div>
+
+            <p class="text-center text-gray-400 text-sm mt-8">
+                * Los precios pueden variar. Contáctenos para información actualizada.<!-- ← CAMBIAR nota -->
+            </p>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         GALERÍA
+         CAMBIAR FOTOS:
+           1. Coloca tus fotos en  img/actividades/
+           2. Cambia el src de cada <img> por  ../img/actividades/tu-foto.jpg
+           3. Actualiza el atributo alt con una descripción real.
+    ═══════════════════════════════════════════════════════════════ -->
+    <section id="galeria" class="py-24 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+
+            <div class="text-center mb-16 animar-entrada">
+                <span class="text-primary-600 font-bold text-sm uppercase tracking-widest">Galería</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-800 mt-2">Momentos especiales</h2>
+                <p class="mt-4 text-gray-500 max-w-xl mx-auto">
+                    Cada foto cuenta una historia de crecimiento, alegría y aprendizaje.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-[180px]">
+
+                <!-- Foto grande — CAMBIAR -->
+                <div class="animar-entrada col-span-2 row-span-2 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
+                    <img src="https://picsum.photos/seed/galeria-principal/800/600"
+                         alt="Niños jugando en la guardería"<!-- ← CAMBIAR descripción -->
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                         loading="lazy" />
+                </div>
+
+                <!-- Foto 2 — CAMBIAR -->
+                <div class="animar-entrada rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
+                    <img src="https://picsum.photos/seed/galeria-arte/600/400"
+                         alt="Actividad de arte"<!-- ← CAMBIAR descripción -->
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                         loading="lazy" />
+                </div>
+
+                <!-- Foto 3 — CAMBIAR -->
+                <div class="animar-entrada rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
+                    <img src="https://picsum.photos/seed/galeria-juego/600/400"
+                         alt="Hora de juego libre"<!-- ← CAMBIAR descripción -->
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                         loading="lazy" />
+                </div>
+
+                <!-- Foto 4 — CAMBIAR -->
+                <div class="animar-entrada rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
+                    <img src="https://picsum.photos/seed/galeria-lectura/600/400"
+                         alt="Hora del cuento"<!-- ← CAMBIAR descripción -->
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                         loading="lazy" />
+                </div>
+
+                <!-- Foto 5 — CAMBIAR -->
+                <div class="animar-entrada rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
+                    <img src="https://picsum.photos/seed/galeria-musica/600/400"
+                         alt="Actividad de música"<!-- ← CAMBIAR descripción -->
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                         loading="lazy" />
+                </div>
+
+                <!-- Foto 6 — ancho doble — CAMBIAR -->
+                <div class="animar-entrada col-span-2 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
+                    <img src="https://picsum.photos/seed/galeria-merienda/900/400"
+                         alt="Hora de la merienda"<!-- ← CAMBIAR descripción -->
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                         loading="lazy" />
+                </div>
+
+            </div>
+
+            <!-- ELIMINAR este párrafo cuando tengas fotos reales -->
+            <p class="text-center text-gray-400 text-xs mt-6">
+                Imágenes de muestra — serán reemplazadas con fotos reales de la guardería.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         CTA — PORTAL DE PADRES
+    ═══════════════════════════════════════════════════════════════ -->
+    <section class="py-20 bg-primary-600">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center animar-entrada">
+            <!-- CAMBIAR: texto del CTA -->
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">
+                ¿Ya es parte de nuestra familia?
+            </h2>
+            <p class="text-blue-100 text-lg mb-8 max-w-xl mx-auto">
+                Acceda al portal de padres para ver el reporte diario de su hijo,
+                gestionar pagos y mantenerse al día con todo.
+            </p>
+            <!-- CAMBIAR: URL del portal -->
+            <a href="/login"
+               class="inline-block px-8 py-4 rounded-full bg-white text-primary-700 font-extrabold text-lg hover:bg-blue-50 transition-colors shadow-xl">
+                Acceder al portal →
+            </a>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         CONTACTO
+         CAMBIAR: teléfono, WhatsApp y dirección  ← CAMBIAR
+    ═══════════════════════════════════════════════════════════════ -->
+    <section id="contacto" class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+
+            <div class="text-center mb-16 animar-entrada">
+                <span class="text-primary-600 font-bold text-sm uppercase tracking-widest">Contacto</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-800 mt-2">Estamos para ayudarle</h2>
+                <p class="mt-4 text-gray-500 max-w-xl mx-auto">
+                    ¿Tiene preguntas sobre nuestra guardería? Escríbanos o visítenos.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <!-- Teléfono — CAMBIAR: número -->
+                <div class="animar-entrada text-center p-8 rounded-2xl bg-gray-50 hover:shadow-md transition-shadow">
+                    <div class="w-14 h-14 rounded-full bg-primary-100 flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-7 h-7 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2">Teléfono</h3>
+                    <!-- CAMBIAR: número en href y en el texto visible -->
+                    <a href="tel:+18091234567" class="text-primary-600 font-semibold hover:underline">
+                        +1 (809) 123-4567
+                    </a>
+                </div>
+
+                <!-- WhatsApp — CAMBIAR: número -->
+                <div class="animar-entrada text-center p-8 rounded-2xl bg-gray-50 hover:shadow-md transition-shadow">
+                    <div class="w-14 h-14 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-7 h-7 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2">WhatsApp</h3>
+                    <!-- CAMBIAR: número de WhatsApp (sin guiones ni espacios) -->
+                    <a href="https://wa.me/18091234567" target="_blank" rel="noopener noreferrer"
+                       class="text-green-600 font-semibold hover:underline">
+                        Escribir ahora
+                    </a>
+                </div>
+
+                <!-- Dirección — CAMBIAR -->
+                <div class="animar-entrada text-center p-8 rounded-2xl bg-gray-50 hover:shadow-md transition-shadow">
+                    <div class="w-14 h-14 rounded-full bg-red-100 flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-7 h-7 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2">Dirección</h3>
+                    <!-- CAMBIAR: dirección física -->
+                    <p class="text-gray-500 text-sm">
+                        Calle Ejemplo #123<br/>
+                        Santo Domingo, República Dominicana
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         FOOTER
+    ═══════════════════════════════════════════════════════════════ -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+
+                <div class="flex items-center gap-2">
+                    <img src="../img/favicon.svg" alt="Logo Creceré" class="w-8 h-8" />
+                    <span class="text-white font-extrabold text-lg">Creceré</span><!-- ← CAMBIAR nombre -->
+                </div>
+
+                <nav class="flex flex-wrap justify-center gap-6 text-sm">
+                    <a href="#nosotros"    class="hover:text-white transition-colors">Nosotros</a>
+                    <a href="#actividades" class="hover:text-white transition-colors">Actividades</a>
+                    <a href="#horarios"    class="hover:text-white transition-colors">Horarios</a>
+                    <a href="#contacto"    class="hover:text-white transition-colors">Contacto</a>
+                    <a href="/login"       class="hover:text-white transition-colors">Portal de padres</a>
+                </nav>
+
+                <!-- CAMBIAR: año -->
+                <p class="text-sm text-gray-600">© 2026 Creceré. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

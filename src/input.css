@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colores primarios (azul principal — igual que la app Blazor) */
+  --color-primary-50:  #e8f4fd;
+  --color-primary-100: #c5e3f9;
+  --color-primary-200: #9fd0f5;
+  --color-primary-300: #6eb5ef;
+  --color-primary-400: #4aa0ea;
+  --color-primary-500: #2389e4;
+  --color-primary-600: #1976d2;
+  --color-primary-700: #1565c0;
+  --color-primary-800: #1154a8;
+  --color-primary-900: #0d3f80;
+
+  /* Colores de acento (amarillo/dorado) */
+  --color-accent-400: #ffca28;
+  --color-accent-500: #ffb300;
+  --color-accent-600: #ff8f00;
+
+  /* Tipografía */
+  --font-family-sans: 'Nunito', ui-sans-serif, system-ui, sans-serif;
+}

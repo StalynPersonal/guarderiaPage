@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Fondo circular azul -->
+  <circle cx="16" cy="16" r="16" fill="#1976d2"/>
+  <!-- Letra C estilizada -->
+  <path d="M20.5 11c-1.2-1.3-2.8-2-4.5-2C12.4 9 9 12.4 9 16.5S12.4 24 16.5 24c1.7 0 3.3-.7 4.5-2"
+        fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Hoja / brote -->
+  <path d="M16.5 16.5 C16.5 12 19.5 9.5 23 9 C23 13 20.5 16 16.5 16.5Z"
+        fill="#ffca28"/>
+  <line x1="16.5" y1="16.5" x2="19.5" y2="11" stroke="#ffca28" stroke-width="1" stroke-linecap="round"/>
+</svg>
