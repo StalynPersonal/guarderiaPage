@@ -7,7 +7,7 @@
     <title>Creceré — Guardería Infantil</title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="../img/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
 
     <!-- Fuente Nunito (Google Fonts) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
     <!-- CSS generado por Tailwind CLI  (npm run build) -->
-    <link rel="stylesheet" href="../dist/styles.css" />
+    <link rel="stylesheet" href="dist/styles.css" />
 </head>
 
 
@@ -30,7 +30,7 @@
 
                 <!-- Logo — CAMBIAR: nombre de la guardería -->
                 <a href="#inicio" class="flex items-center gap-2">
-                    <img src="../img/favicon.svg" alt="Logo Creceré" class="w-9 h-9" />
+                    <img src="img/favicon.svg" alt="Logo Creceré" class="w-9 h-9" />
                     <!-- CAMBIAR: nombre en el navbar -->
                     <span class="text-xl font-extrabold text-primary-700">Creceré</span>
                 </a>
@@ -114,17 +114,13 @@
                 </div>
             </div>
 
-            <!-- ── Carrusel derecha ──────────────────────────────────────────
-                 CAMBIAR IMÁGENES: en cada slide reemplaza el src por tu foto real.
-                 Ejemplo: src="../img/actividades/tu-foto.jpg"
-                 También actualiza el texto del caption (el <p> al final del slide).
-            ─────────────────────────────────────────────────────────────── -->
+            <!-- ── Carrusel derecha ── -->
             <div class="relative" id="hero-carousel">
 
                 <!-- Contenedor de slides -->
                 <div class="relative h-80 md:h-96 lg:h-[430px] rounded-3xl overflow-hidden shadow-2xl">
 
-                    <!-- Slide 1 — CAMBIAR -->
+                    <!-- Slide 1 — CAMBIAR src por foto real: img/actividades/foto.jpg -->
                     <div class="slide absolute inset-0 opacity-0 transition-opacity duration-700 ease-in-out">
                         <img src="https://picsum.photos/seed/crecere-hero-1/700/500"
                              alt="Niños jugando en la guardería"
@@ -161,9 +157,7 @@
                     </div>
 
                     <!-- Flecha anterior -->
-                    <button id="carousel-prev"
-                            type="button"
-                            aria-label="Imagen anterior"
+                    <button id="carousel-prev" type="button" aria-label="Imagen anterior"
                             class="absolute left-3 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white/80 hover:bg-white flex items-center justify-center shadow-md transition-colors">
                         <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
@@ -171,9 +165,7 @@
                     </button>
 
                     <!-- Flecha siguiente -->
-                    <button id="carousel-next"
-                            type="button"
-                            aria-label="Imagen siguiente"
+                    <button id="carousel-next" type="button" aria-label="Imagen siguiente"
                             class="absolute right-3 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white/80 hover:bg-white flex items-center justify-center shadow-md transition-colors">
                         <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
@@ -203,8 +195,7 @@
 
 
     <!-- ═══════════════════════════════════════════════════════════════
-         STATS — franja de números debajo del hero
-         CAMBIAR: los 4 números y sus etiquetas
+         STATS — CAMBIAR: los 4 números y sus etiquetas
     ═══════════════════════════════════════════════════════════════ -->
     <section id="stats" class="py-10 bg-white border-b border-gray-100">
         <div class="max-w-6xl mx-auto px-4 sm:px-6">
@@ -251,21 +242,19 @@
 
             <div class="grid md:grid-cols-3 gap-8">
 
-                <!-- Tarjeta 1 — CAMBIAR: título y descripción -->
                 <div class="animar-entrada text-center p-8 rounded-2xl bg-blue-50 hover:shadow-lg transition-shadow">
                     <div class="w-16 h-16 rounded-full bg-primary-600 flex items-center justify-center mx-auto mb-5">
                         <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Ambiente amoroso</h3>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Ambiente amoroso</h3><!-- ← CAMBIAR -->
                     <p class="text-gray-500 leading-relaxed">
                         Cada niño recibe atención personalizada en un entorno cálido donde se
                         siente seguro y querido todos los días.
                     </p>
                 </div>
 
-                <!-- Tarjeta 2 -->
                 <div class="animar-entrada text-center p-8 rounded-2xl bg-yellow-50 hover:shadow-lg transition-shadow">
                     <div class="w-16 h-16 rounded-full bg-accent-500 flex items-center justify-center mx-auto mb-5">
                         <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -279,7 +268,6 @@
                     </p>
                 </div>
 
-                <!-- Tarjeta 3 -->
                 <div class="animar-entrada text-center p-8 rounded-2xl bg-green-50 hover:shadow-lg transition-shadow">
                     <div class="w-16 h-16 rounded-full bg-green-500 flex items-center justify-center mx-auto mb-5">
                         <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -299,8 +287,6 @@
 
     <!-- ═══════════════════════════════════════════════════════════════
          ACTIVIDADES
-         CAMBIAR: para usar foto real descomenta la línea <img> y
-         ajusta el src a la ruta de tu imagen.
     ═══════════════════════════════════════════════════════════════ -->
     <section id="actividades" class="py-24 bg-gray-50">
         <div class="max-w-6xl mx-auto px-4 sm:px-6">
@@ -316,12 +302,9 @@
 
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-                <!-- ── Actividad: Música ──────────────────────────── -->
                 <div class="animar-entrada bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                     <div class="relative h-48 bg-gradient-to-br from-purple-400 to-pink-400 flex items-center justify-center overflow-hidden">
-                        <!-- CAMBIAR: imagen de muestra → foto real  -->
-                        <img src="https://picsum.photos/seed/musica-crecere/600/300"
-                             alt="Música y movimiento"
+                        <img src="https://picsum.photos/seed/musica-crecere/600/300" alt="Música y movimiento"
                              class="absolute inset-0 w-full h-full object-cover opacity-60" loading="lazy" />
                         <span class="relative text-5xl drop-shadow-lg">🎵</span>
                     </div>
@@ -334,11 +317,9 @@
                     </div>
                 </div>
 
-                <!-- ── Actividad: Arte ────────────────────────────── -->
                 <div class="animar-entrada bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                     <div class="relative h-48 bg-gradient-to-br from-yellow-300 to-orange-400 flex items-center justify-center overflow-hidden">
-                        <img src="https://picsum.photos/seed/arte-crecere/600/300"
-                             alt="Arte y manualidades"
+                        <img src="https://picsum.photos/seed/arte-crecere/600/300" alt="Arte y manualidades"
                              class="absolute inset-0 w-full h-full object-cover opacity-60" loading="lazy" />
                         <span class="relative text-5xl drop-shadow-lg">🎨</span>
                     </div>
@@ -351,11 +332,9 @@
                     </div>
                 </div>
 
-                <!-- ── Actividad: Lectura ─────────────────────────── -->
                 <div class="animar-entrada bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                     <div class="relative h-48 bg-gradient-to-br from-blue-300 to-cyan-400 flex items-center justify-center overflow-hidden">
-                        <img src="https://picsum.photos/seed/lectura-crecere/600/300"
-                             alt="Cuentos y lectura"
+                        <img src="https://picsum.photos/seed/lectura-crecere/600/300" alt="Cuentos y lectura"
                              class="absolute inset-0 w-full h-full object-cover opacity-60" loading="lazy" />
                         <span class="relative text-5xl drop-shadow-lg">📚</span>
                     </div>
@@ -368,11 +347,9 @@
                     </div>
                 </div>
 
-                <!-- ── Actividad: Juego libre ─────────────────────── -->
                 <div class="animar-entrada bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                     <div class="relative h-48 bg-gradient-to-br from-green-300 to-teal-400 flex items-center justify-center overflow-hidden">
-                        <img src="https://picsum.photos/seed/juego-crecere/600/300"
-                             alt="Juego libre"
+                        <img src="https://picsum.photos/seed/juego-crecere/600/300" alt="Juego libre"
                              class="absolute inset-0 w-full h-full object-cover opacity-60" loading="lazy" />
                         <span class="relative text-5xl drop-shadow-lg">🧸</span>
                     </div>
@@ -385,11 +362,9 @@
                     </div>
                 </div>
 
-                <!-- ── Actividad: Alimentación ────────────────────── -->
                 <div class="animar-entrada bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                     <div class="relative h-48 bg-gradient-to-br from-red-300 to-pink-400 flex items-center justify-center overflow-hidden">
-                        <img src="https://picsum.photos/seed/alimentos-crecere/600/300"
-                             alt="Alimentación saludable"
+                        <img src="https://picsum.photos/seed/alimentos-crecere/600/300" alt="Alimentación saludable"
                              class="absolute inset-0 w-full h-full object-cover opacity-60" loading="lazy" />
                         <span class="relative text-5xl drop-shadow-lg">🍎</span>
                     </div>
@@ -402,11 +377,9 @@
                     </div>
                 </div>
 
-                <!-- ── Actividad: Siesta ──────────────────────────── -->
                 <div class="animar-entrada bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                     <div class="relative h-48 bg-gradient-to-br from-indigo-300 to-purple-400 flex items-center justify-center overflow-hidden">
-                        <img src="https://picsum.photos/seed/siesta-crecere/600/300"
-                             alt="Descanso y siesta"
+                        <img src="https://picsum.photos/seed/siesta-crecere/600/300" alt="Descanso y siesta"
                              class="absolute inset-0 w-full h-full object-cover opacity-60" loading="lazy" />
                         <span class="relative text-5xl drop-shadow-lg">😴</span>
                     </div>
@@ -425,8 +398,7 @@
 
 
     <!-- ═══════════════════════════════════════════════════════════════
-         HORARIOS Y TARIFAS
-         CAMBIAR: precio y horario en cada tarjeta  ← CAMBIAR
+         HORARIOS Y TARIFAS — CAMBIAR: precio y horario en cada tarjeta
     ═══════════════════════════════════════════════════════════════ -->
     <section id="horarios" class="py-24 bg-white">
         <div class="max-w-6xl mx-auto px-4 sm:px-6">
@@ -501,11 +473,8 @@
 
 
     <!-- ═══════════════════════════════════════════════════════════════
-         GALERÍA
-         CAMBIAR FOTOS:
-           1. Coloca tus fotos en  img/actividades/
-           2. Cambia el src de cada <img> por  ../img/actividades/tu-foto.jpg
-           3. Actualiza el atributo alt con una descripción real.
+         GALERÍA — CAMBIAR FOTOS: coloca tus fotos en img/actividades/
+         y cambia el src de cada imagen.
     ═══════════════════════════════════════════════════════════════ -->
     <section id="galeria" class="py-24 bg-gray-50">
         <div class="max-w-6xl mx-auto px-4 sm:px-6">
@@ -520,57 +489,39 @@
 
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-[180px]">
 
-                <!-- Foto grande — CAMBIAR -->
                 <div class="animar-entrada col-span-2 row-span-2 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
                     <img src="https://picsum.photos/seed/galeria-principal/800/600"
-                         alt="Niños jugando en la guardería"<!-- ← CAMBIAR descripción -->
-                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                         loading="lazy" />
+                         alt="Niños jugando en la guardería"
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
                 </div>
-
-                <!-- Foto 2 — CAMBIAR -->
                 <div class="animar-entrada rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
                     <img src="https://picsum.photos/seed/galeria-arte/600/400"
-                         alt="Actividad de arte"<!-- ← CAMBIAR descripción -->
-                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                         loading="lazy" />
+                         alt="Actividad de arte"
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
                 </div>
-
-                <!-- Foto 3 — CAMBIAR -->
                 <div class="animar-entrada rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
                     <img src="https://picsum.photos/seed/galeria-juego/600/400"
-                         alt="Hora de juego libre"<!-- ← CAMBIAR descripción -->
-                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                         loading="lazy" />
+                         alt="Hora de juego libre"
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
                 </div>
-
-                <!-- Foto 4 — CAMBIAR -->
                 <div class="animar-entrada rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
                     <img src="https://picsum.photos/seed/galeria-lectura/600/400"
-                         alt="Hora del cuento"<!-- ← CAMBIAR descripción -->
-                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                         loading="lazy" />
+                         alt="Hora del cuento"
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
                 </div>
-
-                <!-- Foto 5 — CAMBIAR -->
                 <div class="animar-entrada rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
                     <img src="https://picsum.photos/seed/galeria-musica/600/400"
-                         alt="Actividad de música"<!-- ← CAMBIAR descripción -->
-                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                         loading="lazy" />
+                         alt="Actividad de música"
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
                 </div>
-
-                <!-- Foto 6 — ancho doble — CAMBIAR -->
                 <div class="animar-entrada col-span-2 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
                     <img src="https://picsum.photos/seed/galeria-merienda/900/400"
-                         alt="Hora de la merienda"<!-- ← CAMBIAR descripción -->
-                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                         loading="lazy" />
+                         alt="Hora de la merienda"
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
                 </div>
 
             </div>
 
-            <!-- ELIMINAR este párrafo cuando tengas fotos reales -->
             <p class="text-center text-gray-400 text-xs mt-6">
                 Imágenes de muestra — serán reemplazadas con fotos reales de la guardería.
             </p>
@@ -583,7 +534,6 @@
     ═══════════════════════════════════════════════════════════════ -->
     <section class="py-20 bg-primary-600">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center animar-entrada">
-            <!-- CAMBIAR: texto del CTA -->
             <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">
                 ¿Ya es parte de nuestra familia?
             </h2>
@@ -601,8 +551,7 @@
 
 
     <!-- ═══════════════════════════════════════════════════════════════
-         CONTACTO
-         CAMBIAR: teléfono, WhatsApp y dirección  ← CAMBIAR
+         CONTACTO — CAMBIAR: teléfono, WhatsApp y dirección
     ═══════════════════════════════════════════════════════════════ -->
     <section id="contacto" class="py-24 bg-white">
         <div class="max-w-6xl mx-auto px-4 sm:px-6">
@@ -617,7 +566,6 @@
 
             <div class="grid md:grid-cols-3 gap-8">
 
-                <!-- Teléfono — CAMBIAR: número -->
                 <div class="animar-entrada text-center p-8 rounded-2xl bg-gray-50 hover:shadow-md transition-shadow">
                     <div class="w-14 h-14 rounded-full bg-primary-100 flex items-center justify-center mx-auto mb-4">
                         <svg class="w-7 h-7 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -632,7 +580,6 @@
                     </a>
                 </div>
 
-                <!-- WhatsApp — CAMBIAR: número -->
                 <div class="animar-entrada text-center p-8 rounded-2xl bg-gray-50 hover:shadow-md transition-shadow">
                     <div class="w-14 h-14 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-4">
                         <svg class="w-7 h-7 text-green-600" fill="currentColor" viewBox="0 0 24 24">
@@ -647,7 +594,6 @@
                     </a>
                 </div>
 
-                <!-- Dirección — CAMBIAR -->
                 <div class="animar-entrada text-center p-8 rounded-2xl bg-gray-50 hover:shadow-md transition-shadow">
                     <div class="w-14 h-14 rounded-full bg-red-100 flex items-center justify-center mx-auto mb-4">
                         <svg class="w-7 h-7 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -677,7 +623,7 @@
             <div class="flex flex-col md:flex-row items-center justify-between gap-6">
 
                 <div class="flex items-center gap-2">
-                    <img src="../img/favicon.svg" alt="Logo Creceré" class="w-8 h-8" />
+                    <img src="img/favicon.svg" alt="Logo Creceré" class="w-8 h-8" />
                     <span class="text-white font-extrabold text-lg">Creceré</span><!-- ← CAMBIAR nombre -->
                 </div>
 
@@ -695,6 +641,6 @@
         </div>
     </footer>
 
-    <script src="../js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
